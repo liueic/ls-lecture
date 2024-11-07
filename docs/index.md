@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "计算机扫盲"
-  text: "一个简单、易懂的计算机入门讲座"
-  tagline: Light and Simple
+  text: ""
+  tagline: 让计算机为你的工作如虎添翼
   actions:
     - theme: brand
       text: Markdown Examples
