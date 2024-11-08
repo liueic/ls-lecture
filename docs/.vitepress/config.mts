@@ -3,6 +3,10 @@ import {
   GitChangelog,
   GitChangelogMarkdownSection,
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
+import {
+  ThumbnailHashImages,
+} from '@nolebase/vitepress-plugin-thumbnail-hash/vite'
+import { UnlazyImages } from '@nolebase/markdown-it-unlazy-img'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -11,6 +15,7 @@ export default defineConfig({
       GitChangelog({
         repoURL: () => 'https://github.com/Aicnal/ls-lecture',
       }),
+      ThumbnailHashImages(),
       GitChangelogMarkdownSection(),
     ]
   },
@@ -40,6 +45,11 @@ export default defineConfig({
   markdown: {
     image: {
       lazyLoading: true
-    }
+    },
+    config: (md) => {
+      md.use(UnlazyImages(), {
+        imgElementTag: 'NolebaseUnlazyImg',
+      });
+    },
   }
 })
