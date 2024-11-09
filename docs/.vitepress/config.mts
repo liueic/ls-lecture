@@ -13,7 +13,7 @@ export default defineConfig({
   vite: {
     plugins: [
       GitChangelog({
-        repoURL: () => 'https://github.com/CNU-OS/ls-lecture.git',
+        repoURL: () => 'https://github.com/Aicnal/ls-lecture.git',
       }),
       ThumbnailHashImages(),
       GitChangelogMarkdownSection(),
