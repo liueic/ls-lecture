@@ -12,8 +12,6 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
-      with:
-        persist-credentials: false  # 禁用默认的 GITHUB_TOKEN
 
     - name: Set up Python
       uses: actions/setup-python@v3
