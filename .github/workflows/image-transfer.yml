@@ -12,6 +12,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+      with:
+        persist-credentials: false  # 禁用默认的 GITHUB_TOKEN
 
     - name: Set up Python
       uses: actions/setup-python@v3
@@ -26,3 +28,16 @@ jobs:
         API_TOKEN: ${{ secrets.API_TOKEN }}
         UPLOAD_URL: ${{ secrets.UPLOAD_URL }}
       run: python transform.py
+
+    - name: Configure Git
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+    - name: Commit and push changes
+      run: |
+        git add .
+        git commit -m "Update image links"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
