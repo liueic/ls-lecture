@@ -3,7 +3,7 @@ name: Transfer Images
 on:
   push:
     branches:
-      - main 
+      - main
 
 jobs:
   image_transfer:
