@@ -2,8 +2,8 @@ name: Transfer Images
 
 on:
   push:
-    branches:
-      - main
+    paths:
+      - 'docs/**/*.md'
 
 jobs:
   image_transfer:
