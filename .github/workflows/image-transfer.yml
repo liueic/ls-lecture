@@ -2,8 +2,8 @@ name: Transfer Images
 
 on:
   push:
-    paths:
-      - 'docs/**/*.md'
+    branches:
+      - main  # 或者你希望触发的其他分支
 
 jobs:
   image_transfer:
@@ -22,4 +22,7 @@ jobs:
       run: pip install requests
 
     - name: Run image transfer script
+      env:
+        API_TOKEN: ${{ secrets.API_TOKEN }}
+        UPLOAD_URL: ${{ secrets.UPLOAD_URL }}
       run: python transform.py
