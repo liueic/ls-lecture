@@ -1,0 +1,25 @@
+name: Transfer Images
+
+on:
+  push:
+    paths:
+      - 'docs/**/*.md'
+
+jobs:
+  image_transfer:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: pip install requests
+
+    - name: Run image transfer script
+      run: python transform.py
