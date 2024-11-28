@@ -3,7 +3,7 @@ name: Transfer Images
 on:
   push:
     branches:
-      - main
+      - main  # 或者你希望触发的其他分支
 
 jobs:
   image_transfer:
@@ -12,9 +12,6 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
-      with:
-        persist-credentials: false
-        fetch-depth: 0
 
     - name: Set up Python
       uses: actions/setup-python@v3
@@ -30,7 +27,15 @@ jobs:
         UPLOAD_URL: ${{ secrets.UPLOAD_URL }}
       run: python transform.py
 
-    - name: Commit and Push changes
-      uses: ad-m/github-push-action@v0.6.0
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Configure Git
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+    - name: Commit and push changes
+      run: |
+        git add .
+        git commit -m "Update image links"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
