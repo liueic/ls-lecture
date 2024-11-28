@@ -16,7 +16,9 @@ features:
     details: 轻量化的讲座形式
   - title: Simple
     details: 简单易懂的知识体系
-  - title: Useful
-    details: 超级有用的实用技能
+  - title: Memos
+    details: 一个好玩的知识库
+    links: https://memos.caimeo.world/explore
+    linkText: Memos
 ---
 

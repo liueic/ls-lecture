@@ -26,17 +26,26 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Caimeo', link: 'https://memos.caimeo.world/' }
+      { text: 'Memos', link: 'https://memos.caimeo.world/' }
     ],
 
     sidebar: [
       {
-        text: '讲座目录',
+        text: '开始',
         items: [
-          { text: '概述', link: '/概述' },
-          { text: '信息检索与搜索引擎的使用', link: '/信息检索与搜索引擎的使用' },
+          { text: '概述', link: '/概述' }
+        ]
+      },
+      {
+        text: '基础使用',
+        items: [
+          { text: '信息检索与搜索引擎的使用', link: '/信息检索与搜索引擎的使用' }
+        ]
+      },
+      {
+        text: '进阶玩法',
+        items: [
           { text: '信息安全与开源软件', link: '/信息安全与开源软件' }
-
         ]
       }
     ],

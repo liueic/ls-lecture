@@ -16,7 +16,7 @@
 ```bash
 git clone https://github.com/Aicnal/ls-lecture.git
 npm add -D vitepress
-npm run docs:preview
+npm run docs:dev
 ```
 
 之后会在本地`5173`端口进行预览，不过我们不建议你在服务器上进行部署。如需在服务器上部署请进行构建：
