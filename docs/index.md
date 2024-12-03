@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "计算机扫盲"
+  name: "计算机讲座"
   text: ""
-  tagline: 让计算机为你的工作如虎添翼
+  tagline: For using and love
   actions:
     - theme: brand
       text: 开始
