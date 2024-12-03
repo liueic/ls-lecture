@@ -8,7 +8,7 @@ hero:
   tagline: 让计算机为你的工作如虎添翼
   actions:
     - theme: brand
-      text: 概述
+      text: 开始
       link: /概述
 
 features:
