@@ -20,8 +20,8 @@ export default defineConfig({
     ]
   },
   lang: 'zh-CN',
-  title: "计算机扫盲讲座讲义",
-  description: "计算机扫盲讲座",
+  title: "计算机讲座",
+  description: "计算机讲座",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
