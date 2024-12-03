@@ -32,7 +32,16 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
+    - name: Check for changes
+      id: check_changes
+      run: |
+        if git diff --quiet; then
+          echo "No changes to commit"
+          exit 0
+        fi
+
     - name: Commit and push changes
+      if: steps.check_changes.outputs.changes == 'true'
       run: |
         git add .
         git commit -m "Update image links"
