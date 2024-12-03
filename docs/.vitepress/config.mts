@@ -47,6 +47,12 @@ export default defineConfig({
         items: [
           { text: '信息安全与开源软件', link: '/信息安全与开源软件' }
         ]
+      },
+      {
+        text: '计算机网络',
+        items: [
+          { text: '计算机网络', link: '/计算机网络入门' }
+        ]
       }
     ],
 
