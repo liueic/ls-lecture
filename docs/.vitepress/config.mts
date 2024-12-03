@@ -31,9 +31,10 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: '开始',
+        text: '在之前',
         items: [
-          { text: '概述', link: '/概述' }
+          { text: '概述', link: '/概述' },
+          { text: '提问的智慧', link: '/提问的智慧' }
         ]
       },
       {
