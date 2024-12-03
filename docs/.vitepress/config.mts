@@ -51,7 +51,7 @@ export default defineConfig({
       {
         text: '计算机网络',
         items: [
-          { text: '计算机网络', link: '/计算机网络入门' }
+          { text: '当你输入网址，按下回车的背后', link: '/计算机网络入门' }
         ]
       }
     ],
