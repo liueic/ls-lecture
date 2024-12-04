@@ -22,7 +22,7 @@
 比如说你想搜索：
 > 什么是《提问的智慧》
 
-与其耗费大量的时间水群，不如借助一些现代化的搜索引擎，便能很快得到准确的答案
+与其耗费大量的时间水群，等待热心的群U帮你解决问题，不如借助一些现代化的搜索引擎，便能很快得到准确的答案
 
 ![image](https://pic.juniortree.com/app/hide.php?key=bHh0eU9UWXZSdVFuaTNYdDY1MEV1NldmMVdlcDcwbmZsZz09)
 
@@ -56,7 +56,7 @@
 
 ```
 请问
-  ...问题描述..
+  ...问题描述...
 谢谢
 ```
 
