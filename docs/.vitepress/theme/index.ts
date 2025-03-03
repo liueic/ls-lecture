@@ -6,6 +6,7 @@ import {
   NolebaseUnlazyImg,
 } from '@nolebase/vitepress-plugin-thumbnail-hash/client'
 import '@nolebase/vitepress-plugin-thumbnail-hash/client/style.css'
+import './style.css'
 
 const Theme: Theme = {
   extends: DefaultTheme,
