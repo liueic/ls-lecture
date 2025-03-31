@@ -13,7 +13,7 @@ export default defineConfig({
   vite: {
     plugins: [
       GitChangelog({
-        repoURL: () => 'https://github.com/Aicnal/ls-lecture.git',
+        repoURL: () => 'https://github.com/liueic/ls-lecture',
       }),
       ThumbnailHashImages(),
       GitChangelogMarkdownSection(),
@@ -49,6 +49,14 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Linux 基础使用',
+        items: [
+          { text: '概述', link: '/Linux/概述' },
+          { text: '实践环境的搭建', link: '/Linux/Linux环境的搭建'},
+          { text: 'Docker的基础使用', link: '/Linux/Docker'}
+        ]
+      },
+      {
         text: '计算机网络',
         items: [
           { text: '当你输入网址，按下回车的背后', link: '/计算机网络入门' }
@@ -57,7 +65,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Aicnal/ls-lecture' }
+      { icon: 'github', link: 'https://github.com/liueic/ls-lecture' }
     ]
   },
   markdown: {
