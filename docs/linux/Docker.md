@@ -261,7 +261,9 @@ git clone https://github.com/liueic/AirPage.git
  docker build -t air_page .
 ```
 
-这里的 `-t` 是给这个镜像打上一个标签，标签名为 `air_page`，这样的话会方便我们查找对应的镜像，构建完成之后，按照文档的提示去申请一个 API KEY：https://aqicn.org/data-platform/token/，之后就可以启动了（这里的 API KEY 是用于后端的天气API查询）
+这里的 `-t` 是给这个镜像打上一个标签，标签名为 `air_page`，这样的话会方便我们查找对应的镜像，构建完成之后，按照文档的提示去申请一个 API KEY：https://aqicn.org/data-platform/token/
+
+之后就可以启动了（这里的 API KEY 是用于后端的天气API查询）
 
 使用 `docker run` 进行启动：
 

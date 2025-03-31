@@ -51,9 +51,9 @@ export default defineConfig({
       {
         text: 'Linux 基础使用',
         items: [
-          { text: '概述', link: '/Linux/概述' },
-          { text: '实践环境的搭建', link: '/Linux/Linux环境的搭建'},
-          { text: 'Docker的基础使用', link: '/Linux/Docker'}
+          { text: '概述', link: '/linux/概述' },
+          { text: '实践环境的搭建', link: '/linux/Linux环境的搭建'},
+          { text: 'Docker的基础使用', link: '/linux/Docker'}
         ]
       },
       {
