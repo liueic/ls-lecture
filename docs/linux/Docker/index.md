@@ -294,7 +294,7 @@ docker run -d \
 services:
   db:
     # We use a mariadb image which supports both amd64 & arm64 architecture
-    image: hub.ilovey.de/mariadb:10.6.4-focal
+    image: mariadb:10.6.4-focal
     # If you really want to use MySQL, uncomment the following line
     #image: mysql:8.0.27
     command: '--default-authentication-plugin=mysql_native_password'
@@ -310,7 +310,7 @@ services:
       - 3306
       - 33060
   wordpress:
-    image: hub.ilovey.de/wordpress:latest
+    image: wordpress:latest
     volumes:
       - wp_data/data:/var/www/html
       - wp_data/conf/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
