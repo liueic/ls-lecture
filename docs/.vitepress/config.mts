@@ -60,6 +60,12 @@ export default defineConfig({
         items: [
           { text: '当你输入网址，按下回车的背后', link: '/计算机网络入门' }
         ]
+      },
+      {
+        text: '更多',
+        items: [
+          {text: 'Bug反馈', link: '/bug'}
+        ]
       }
     ],
 
