@@ -17,3 +17,28 @@ export async function newAvatarForAuthor(mappedAuthor: Contributor | undefined, 
 }
 ```
 
+### 解决方案
+
+使用 `patch-package`
+
+并且在 `package.json` 的 `scripts` 中添加：
+
+```json
+"scripts": {
+  "postinstall": "patch-package"
+}
+```
+
+直接到 `node_modules` 文件夹下找到包的文件夹，这里可以使用 VS Code 的全局检索，对其进行修改
+
+生成补丁文件，之后会生成一个新的 `patches` 的文件夹
+
+```bash
+pnpm patch @nolebase/vitepress-plugin-git-changelog
+```
+
+提交变更：
+
+```bash
+pnpm patch-commit '/Users/liueic/Documents/ls-lecture/node_modules/.pnpm_patches/@nolebase/vitepress-plugin-git-changelog@2.16.0'
+```
