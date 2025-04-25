@@ -10,6 +10,16 @@ import { UnlazyImages } from '@nolebase/markdown-it-unlazy-img'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  head: [
+    [
+      'script',
+      {
+        src: 'https://ana.juniortree.com/script.js',
+        'data-website-id': '394d4ff7-1ba3-4582-a800-fca3d757b544',
+        defer: ''
+      }
+    ]
+  ],
   vite: {
     plugins: [
       GitChangelog({
@@ -64,7 +74,7 @@ export default defineConfig({
       {
         text: '更多',
         items: [
-          {text: 'Bug反馈', link: '/bug'}
+          { text: 'Bug反馈', link: '/bug' }
         ]
       }
     ],
