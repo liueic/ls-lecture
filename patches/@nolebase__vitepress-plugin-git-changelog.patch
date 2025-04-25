@@ -1,0 +1,13 @@
+diff --git a/dist/vite/index.mjs b/dist/vite/index.mjs
+index 69ca89450b58681fa0319db409adca569c44ba61..a9e29602826dbf93501347b6c1979b748727dfd4 100644
+--- a/dist/vite/index.mjs
++++ b/dist/vite/index.mjs
+@@ -256,7 +256,7 @@ async function newAvatarForAuthor(mappedAuthor, email) {
+     if (mappedAuthor.username)
+       return `https://github.com/${mappedAuthor.username}.png`;
+   }
+-  return `https://gravatar.com/avatar/${await digestStringAsSHA256(email)}?d=retro`;
++  return `https://gravatar.loli.net/avatar/${await digestStringAsSHA256(email)}?d=retro`;
+ }
+ 
+ const VirtualModuleID = "virtual:nolebase-git-changelog";

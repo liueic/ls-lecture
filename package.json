@@ -3,15 +3,23 @@
     "@nolebase/markdown-it-unlazy-img": "^2.8.1",
     "@nolebase/vitepress-plugin-git-changelog": "^2.8.1",
     "@nolebase/vitepress-plugin-thumbnail-hash": "^2.8.1",
+    "patch-package": "^8.0.0",
+    "postinstall-postinstall": "^2.1.0",
     "vitepress": "^1.6.3"
   },
   "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "twikoo": "^1.6.42"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "@nolebase/vitepress-plugin-git-changelog": "patches/@nolebase__vitepress-plugin-git-changelog.patch"
+    }
   }
 }
