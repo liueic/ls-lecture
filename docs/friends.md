@@ -12,11 +12,21 @@ description: 与我们交换友情链接
 
 <div class="friend-card">
   <div class="friend-avatar">
-    <img src="https://s3.juniortree.com/pic/2025/09/c93639947bdf6f3bc87bd18ed6b283ea.webp" alt="示例网站" />
+    <img src="https://s3.juniortree.com/pic/2025/09/c93639947bdf6f3bc87bd18ed6b283ea.webp" alt="小树博客" />
   </div>
   <div class="friend-info">
     <h3><a href="https://www.juniortree.com" target="_blank">小树的博客</a></h3>
     <p>你应当选择你真正热爱的</p>
+  </div>
+</div>
+
+<div class="friend-card">
+  <div class="friend-avatar">
+    <img src="https://s3.juniortree.com/pic/2025/10/8ef38a37a9545728cc8bc0ccb47e6856.webp" alt="Caimeo博客" />
+  </div>
+  <div class="friend-info">
+    <h3><a href="https://caimeo.world" target="_blank">The rabbit Hole</a></h3>
+    <p>Collection of my notes and posts on various topics in CS, Math, Physics, and PL Theory.</p>
   </div>
 </div>
 
