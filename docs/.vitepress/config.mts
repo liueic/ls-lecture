@@ -36,6 +36,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
+      { text: '友链', link: '/friends' },
       { text: 'Memos', link: 'https://memos.caimeo.world/' }
     ],
 
@@ -74,6 +75,7 @@ export default defineConfig({
       {
         text: '更多',
         items: [
+          { text: '友情链接', link: '/friends' },
           { text: 'Bug反馈', link: '/bug' }
         ]
       }
