@@ -3,7 +3,6 @@ import {
   GitChangelog,
   GitChangelogMarkdownSection,
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
-import { UnlazyImages } from '@nolebase/markdown-it-unlazy-img'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -94,11 +93,6 @@ export default defineConfig({
   markdown: {
     image: {
       lazyLoading: true
-    },
-    config: (md) => {
-      md.use(UnlazyImages(), {
-        imgElementTag: 'NolebaseUnlazyImg',
-      });
     },
   },
   ignoreDeadLinks: true,
