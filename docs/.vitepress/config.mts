@@ -3,9 +3,6 @@ import {
   GitChangelog,
   GitChangelogMarkdownSection,
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
-import {
-  ThumbnailHashImages,
-} from '@nolebase/vitepress-plugin-thumbnail-hash/vite'
 import { UnlazyImages } from '@nolebase/markdown-it-unlazy-img'
 
 // https://vitepress.dev/reference/site-config
@@ -25,9 +22,11 @@ export default defineConfig({
       GitChangelog({
         repoURL: () => 'https://github.com/liueic/ls-lecture',
       }),
-      ThumbnailHashImages(),
       GitChangelogMarkdownSection(),
-    ]
+    ],
+    ssr: {
+      noExternal: ['@unlazy/vue']
+    }
   },
   lang: 'zh-CN',
   title: "计算机讲座",
@@ -70,6 +69,13 @@ export default defineConfig({
         text: '计算机网络',
         items: [
           { text: '当你输入网址，按下回车的背后', link: '/计算机网络入门' }
+        ]
+      },
+      {
+        text: '大模型使用',
+        items: [
+          {text: '介绍', link: '/大模型使用' },
+          {text: 'Model选择', link: '/大模型使用/Model'}
         ]
       },
       {
